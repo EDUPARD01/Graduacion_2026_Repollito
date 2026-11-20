@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#eef2f9" />
+  <meta name="description" content="Invitación digital a la graduación del 6.º Grado, Promoción 2026, de la Escuela Repollito." />
+
+  <!-- ============================================================
+       VISTA PREVIA PARA WHATSAPP Y REDES (OPEN GRAPH / TWITTER)
+       1) Reemplaza TU-DOMINIO por el dominio público donde alojes esta tarjeta.
+       2) Sube una imagen horizontal (recomendado 1200 x 630 px) y coloca
+          su URL pública absoluta en og:image y twitter:image.
+       3) Agrega una etiqueta og:url con la URL pública exacta de esta página.
+       4) WhatsApp guarda temporalmente las vistas previas: después de cambiar
+          la imagen o los textos, vuelve a compartir el enlace o fuerza una
+          actualización de caché con el depurador de Meta Sharing Debugger.
+       Nota: los metadatos Open Graph se leen desde una URL publicada; al abrir
+       el archivo localmente no se generará una vista previa compartible.
+  ============================================================= -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Invitación · Graduación 6.º Grado · Promoción 2026 | Escuela Repollito" />
+  <meta property="og:description" content="Te invitamos a celebrar con nosotros una etapa inolvidable: la graduación de la Promoción 2026." />
+  <meta property="og:image" content="https://github.com/EDUPARD01/Graduacion_2026_Repollito/blob/main/WhatsApp%20Image%202026-11-19%20at%2020.42.38.jpeg?raw=true" />
+  <meta property="og:locale" content="es_PY" />
+  <meta property="og:site_name" content="Escuela Repollito" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Invitación · Graduación 6.º Grado · Promoción 2026 | Escuela Repollito" />
+  <meta name="twitter:description" content="Una etapa termina y comienzan nuevos sueños. ¡Te invitamos a celebrarlo con nosotros!" />
+  <meta name="twitter:image" content="https://github.com/EDUPARD01/Graduacion_2026_Repollito/blob/main/WhatsApp%20Image%202026-11-19%20at%2020.42.38.jpeg?raw=true" />
+
+  <title>Invitación · Graduación 2026 | Escuela Repollito</title>
+  <!-- Sin JavaScript la portada no puede abrirse: se muestra la tarjeta directamente. -->
+  <noscript><style>.invitation-gate{display:none!important}.main-sheet{opacity:1!important;transform:none!important;pointer-events:auto!important}.reveal{opacity:1!important;transform:none!important}body.card-locked{height:auto;overflow:auto}</style></noscript>
+  <style>
+    :root {
+      color-scheme: dark;
+      /* PALETA DEL FLYER: azul marino profundo, marfil y dorado mostaza. */
+      --night: #0b1932;
+      --night-2: #14284a;
+      --ink: #fbf8f0;
+      --muted: #cbd3e0;
+      --gold: #e7c46f;
+      --gold-2: #c99d43;
+      --pink: #e7c46f;
+      --mint: #dce5f1;
+      --panel: rgba(255,255,255,.075);
+      --line: rgba(255,255,255,.15);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --safe-top: env(safe-area-inset-top, 0px);
+      --radius-xl: 28px;
+      --shadow: 0 22px 70px rgba(0,0,0,.28);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--night); }
+    body {
+      margin: 0;
+      min-width: 320px;
+      overflow-x: hidden;
+      background:
+        radial-gradient(ellipse at 12% 8%, rgba(94,125,180,.25), transparent 36rem),
+        radial-gradient(ellipse at 88% 24%, rgba(220,190,122,.10), transparent 34rem),
+        linear-gradient(165deg, #0b1932 0%, #14284a 55%, #09152b 100%);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    button:focus-visible, a:focus-visible { outline: 3px solid var(--mint); outline-offset: 4px; }
+    .page-shell { margin-inline: auto; }
+    .ambient { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+    .ambient::before, .ambient::after {
+      content: ""; position: absolute; width: 220px; height: 220px; border-radius: 50%;
+      filter: blur(70px); opacity: .18; transform: translateZ(0);
+    }
+    .ambient::before { background: #526f9e; top: 18%; left: -90px; }
+    .ambient::after { background: #d2ae60; right: -100px; bottom: 12%; }
+    .topbar { display: flex; justify-content: flex-end; gap: 9px; padding-top: calc(14px + var(--safe-top)); }
+    .tool-button {
+      min-height: 46px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--ink); background: rgba(255,255,255,.075); cursor: pointer;
+      font-size: .82rem; font-weight: 700;
+      transition: background .2s ease, border-color .2s ease, transform .2s ease;
+    }
+    .tool-button:active, .action-button:active, .nav-button:active { transform: scale(.96); }
+    .tool-button[aria-pressed="true"] { border-color: rgba(179,230,213,.65); background: rgba(179,230,213,.13); }
+    .hero { position: relative; text-align: center; padding: 30px 0 34px; isolation: isolate; }
+    .hero::before {
+      content: ""; position: absolute; z-index: -1; width: min(88vw, 590px); aspect-ratio: 1;
+      top: 20px; left: 50%; transform: translateX(-50%); border-radius: 50%;
+      background: radial-gradient(circle, rgba(247,215,139,.12), transparent 66%);
+    }
+    .logo-frame {
+      width: 109px; height: 138px; margin: 3px auto 19px; padding: 7px; display: grid; place-items: center;
+      border-radius: 30px; border: 1px solid rgba(247,215,139,.62);
+      background: linear-gradient(145deg, rgba(255,255,255,.18), rgba(255,255,255,.045));
+      box-shadow: 0 0 0 7px rgba(247,215,139,.045), 0 16px 38px rgba(0,0,0,.22);
+      overflow: hidden;
+    }
+    .logo-frame img { display: none; width: 109%; height: 120%; object-fit: contain; border-radius: 25px; background: #ffffff; }
+    .logo-placeholder { display: flex; flex-direction: column; align-items: center; gap: 3px; color: var(--gold); }
+    .logo-placeholder .cap { font-size: 2rem; line-height: 1; }
+    .logo-placeholder small { color: var(--muted); font-size: .54rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    .eyebrow { margin: 0 0 7px; color: var(--mint); font-size: .72rem; font-weight: 850; letter-spacing: .23em; text-transform: uppercase; }
+    h1 { overflow-wrap: break-word; margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.65rem, 13vw, 5.8rem); line-height: .98; letter-spacing: -.055em; font-weight: 700; }
+    h1 .gold { display: block; color: var(--gold); text-shadow: 0 5px 28px rgba(247,215,139,.18); }
+    .grade-line { margin: 14px 0 0; color: #f7e9cf; font-size: clamp(.98rem, 3.5vw, 1.22rem); font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    .year-stamp { display: inline-flex; align-items: center; gap: 10px; margin-top: 17px; color: var(--gold); font-size: .83rem; font-weight: 800; letter-spacing: .24em; }
+    .year-stamp::before, .year-stamp::after { content: ""; width: 28px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
+    .year-stamp::after { transform: rotate(180deg); }
+    .official-name {
+      max-width: 720px; margin: 23px auto 0; padding: 15px 17px;
+      border-top: 1px solid rgba(247,215,139,.26); border-bottom: 1px solid rgba(247,215,139,.26);
+      color: #ded9e2; font-family: Georgia, "Times New Roman", serif; font-size: clamp(.83rem, 2.8vw, 1rem); line-height: 1.6;
+    }
+    .official-name strong { color: var(--gold); font-weight: 600; }
+    .section { margin: 18px 0; }
+    .hero-invite { max-width: 520px; margin: 20px auto 0; padding: 0 6px; color: #f3ead2; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1rem, 3.6vw, 1.2rem); font-style: italic; line-height: 1.6; }
+    .invite-card { padding: 26px 22px 24px; text-align: center; }
+    .invite-text { max-width: 560px; margin: 12px auto 0; color: #e9eef7; font-size: .98rem; line-height: 1.7; }
+    .invite-sign { margin: 16px 0 0; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: .95rem; font-style: italic; }
+    .glass-card {
+      border: 1px solid var(--line); border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, rgba(255,255,255,.105), rgba(255,255,255,.035));
+      box-shadow: var(--shadow);
+    }
+    .motto-card { padding: 24px 21px 23px; text-align: center; position: relative; overflow: hidden; }
+    .motto-card::after { content: "✦"; position: absolute; top: 9px; right: 17px; color: rgba(247,215,139,.3); font-size: 2rem; }
+    .section-kicker { margin: 0 0 6px; color: var(--mint); font-size: .68rem; font-weight: 850; letter-spacing: .2em; text-transform: uppercase; }
+    h2 { margin: 0; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.55rem, 6vw, 2.15rem); line-height: 1.15; }
+    .motto { max-width: 620px; margin: 11px auto 0; color: #fff4df; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.12rem, 4vw, 1.45rem); font-style: italic; }
+    .motto-hint { margin: 10px 0 0; color: #b9b7c6; font-size: .7rem; }
+    .section-heading { margin: 35px 0 16px; text-align: center; }
+    .section-heading p { margin: 7px 0 0; color: var(--muted); font-size: .9rem; }
+    .countdown-card { padding: 22px 15px 18px; text-align: center; }
+    .count-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 8px; margin-top: 19px; }
+    .time-cell { min-width: 0; padding: 14px 4px 12px; border: 1px solid rgba(247,215,139,.19); border-radius: 17px; background: rgba(8,15,34,.26); }
+    .time-number { display: block; color: var(--gold); font-variant-numeric: tabular-nums; font-size: clamp(1.55rem, 7vw, 2.45rem); line-height: 1; font-weight: 850; letter-spacing: -.06em; }
+    .time-label { display: block; margin-top: 8px; color: #c8c3d1; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; }
+    .countdown-note { min-height: 22px; margin: 15px 0 0; color: var(--mint); font-size: .86rem; font-weight: 650; }
+
+    /* EVENTOS: dos tarjetas de invitación (misa y graduación). */
+    .events-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .event-card {
+      position: relative; min-width: 0; padding: 24px 20px 22px; text-align: center; overflow: hidden;
+      border: 1px solid rgba(231,196,111,.28); border-radius: 24px;
+      background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.035));
+      box-shadow: 0 14px 34px rgba(0,0,0,.14);
+    }
+    .event-badge {
+      position: absolute; top: 14px; left: 14px; width: 36px; height: 36px; display: grid; place-items: center;
+      border: 1px solid rgba(231,196,111,.5); border-radius: 12px; color: var(--gold); font-size: .72rem; font-weight: 900; letter-spacing: .05em;
+    }
+    .event-kicker { margin: 0 0 8px; padding: 0 44px; color: var(--mint); font-size: .68rem; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; overflow-wrap: anywhere; }
+    .event-card h3 { margin: 0; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.3rem, 5.4vw, 1.65rem); line-height: 1.2; overflow-wrap: break-word; }
+    .event-year { margin: 4px 0 16px; color: #f7e9cf; font-size: .78rem; font-weight: 800; letter-spacing: .24em; }
+    .event-facts { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; text-align: left; }
+    .event-facts li { display: flex; align-items: center; gap: 12px; min-width: 0; padding: 11px 13px; border: 1px solid rgba(255,255,255,.1); border-radius: 15px; background: rgba(7,17,36,.24); }
+    .fact-icon { flex: 0 0 34px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 11px; color: var(--gold); background: rgba(231,196,111,.12); }
+    .fact-icon svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .fact-text { min-width: 0; }
+    .fact-text small { display: block; color: #cdd5e4; font-size: .64rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .fact-text strong { display: block; color: #fff9eb; font-size: 1rem; font-weight: 800; overflow-wrap: anywhere; }
+    .events-note { margin: 16px 0 0; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: 1rem; font-style: italic; text-align: center; }
+
+    /* GALERÍA-RULETA: agrega o reemplaza imágenes en el arreglo GALLERY (JavaScript, al final). */
+    .gallery-card { padding: 23px 12px 18px; overflow: hidden; }
+    .gallery-heading { padding: 0 9px; text-align: center; }
+    .gallery-stage {
+      position: relative; height: clamp(240px, 72vw, 365px); max-width: 720px; margin: 15px auto 0;
+      perspective: 1100px; touch-action: pan-y; user-select: none; -webkit-user-select: none;
+    }
+    .gallery-track { position: absolute; inset: 0; transform-style: preserve-3d; }
+    .gallery-slide {
+      position: absolute; top: 50%; left: 50%; width: min(71%, 350px); height: 90%;
+      padding: 9px; border: 1px solid rgba(247,215,139,.36); border-radius: 22px;
+      background: linear-gradient(145deg, #fff8e9, #d8d5df); color: #19213a;
+      box-shadow: 0 18px 45px rgba(0,0,0,.36); overflow: hidden;
+      transform: translate(-50%, -50%); transform-style: preserve-3d;
+      transition: transform .55s cubic-bezier(.2,.75,.2,1), opacity .4s ease, filter .4s ease;
+      will-change: transform, opacity;
+    }
+    .photo-window { position: relative; display: grid; place-items: center; width: 100%; height: calc(100% - 42px); overflow: hidden; border-radius: 15px; background: radial-gradient(circle at 50% 42%, #e9e5dc, #c7c8d3); }
+    .photo-window img { position: relative; z-index: 1; display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; background: transparent; }
+    .photo-caption { display: flex; height: 42px; align-items: center; justify-content: center; padding: 3px 5px 0; color: #222b48; font-size: .78rem; font-weight: 850; text-align: center; }
+    .gallery-controls { display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 12px; }
+    .nav-button { width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid rgba(247,215,139,.4); border-radius: 50%; color: var(--gold); background: rgba(247,215,139,.09); cursor: pointer; font-size: 1.35rem; transition: transform .2s ease, background .2s ease; }
+    .spin-button { min-height: 48px; padding: 0 19px; border: 0; border-radius: 999px; color: #29203a; background: linear-gradient(115deg, #ffe8b4, #e9bd69); box-shadow: 0 7px 22px rgba(233,185,95,.2); cursor: pointer; font-weight: 900; }
+    .gallery-status { margin: 12px 0 0; color: var(--muted); font-size: .72rem; text-align: center; }
+    .gallery-dots { display: flex; justify-content: center; gap: 7px; margin-top: 12px; }
+
+    .footer { padding: 28px 12px calc(27px + var(--safe-bottom)); text-align: center; color: #aaaabd; font-size: .75rem; }
+    .footer strong { color: var(--gold); }
+    .footer .heart { color: var(--pink); }
+    .sparkle { position: absolute; color: var(--gold); opacity: .75; pointer-events: none; animation: twinkle 3s ease-in-out infinite; }
+    .sparkle.s1 { top: 26px; left: 9%; font-size: 13px; }
+    .sparkle.s2 { top: 86px; right: 8%; font-size: 19px; animation-delay: 1s; }
+    .sparkle.s3 { bottom: 25px; left: 14%; font-size: 12px; animation-delay: 1.7s; }
+    @keyframes twinkle { 0%,100% { opacity: .25; transform: scale(.75) rotate(0deg); } 50% { opacity: .95; transform: scale(1.15) rotate(35deg); } }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; transition-delay: var(--reveal-delay, 0ms); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    /* CAMBIO 4: más estrellitas ambientales; solo animan transform y opacity para cuidar móviles. */
+    .sparkle-field { overflow: hidden; pointer-events: none; contain: strict; }
+    /* Las partículas quedan dentro de cada escena: detrás del sobre y detrás del contenido azul. */
+    .gate-sparkle-field { position: absolute; inset: 0; z-index: 0; }
+    .sheet-sparkle-field { position: absolute; inset: 0; z-index: 0; }
+    .sparkle-particle {
+      position: absolute; left: var(--sx); top: var(--sy); color: var(--sc);
+      font-size: var(--ss); line-height: 1; opacity: .22; text-shadow: 0 0 9px rgba(247,215,139,.35);
+      transform: translate3d(0,0,0) scale(.78); animation: sparkleFloat var(--sd) ease-in-out var(--sdelay) infinite;
+    }
+    @keyframes sparkleFloat {
+      0%,100% { opacity: .16; transform: translate3d(0,5px,0) scale(.72) rotate(-10deg); }
+      50% { opacity: .62; transform: translate3d(0,-7px,0) scale(1.08) rotate(18deg); }
+    }
+    .confetti-layer { position: fixed; inset: 0; z-index: 30; overflow: hidden; pointer-events: none; }
+    .confetti-piece { position: absolute; top: -18px; left: var(--x); width: var(--w); height: var(--h); opacity: 0; border-radius: 2px; background: var(--c); transform: translate3d(0,0,0) rotate(0deg); animation: confetti-fall var(--duration) cubic-bezier(.18,.62,.38,1) var(--delay) forwards; }
+    @keyframes confetti-fall { 0% { opacity: 1; transform: translate3d(0,-5vh,0) rotate(0deg); } 100% { opacity: 0; transform: translate3d(var(--drift),110vh,0) rotate(var(--spin)); } }
+    .toast { position: fixed; z-index: 40; left: 50%; bottom: calc(18px + var(--safe-bottom)); width: max-content; max-width: calc(100% - 34px); padding: 12px 16px; border: 1px solid var(--line); border-radius: 99px; color: var(--ink); background: rgba(14,23,48,.94); box-shadow: var(--shadow); font-size: .82rem; text-align: center; opacity: 0; transform: translate(-50%, 15px); transition: opacity .25s ease, transform .25s ease; pointer-events: none; }
+    .toast.show { opacity: 1; transform: translate(-50%,0); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    @media (min-width: 650px) {
+      .hero { padding-top: 44px; padding-bottom: 45px; }
+      .logo-frame { width: 114px; height: 158px; }
+      .motto-card, .countdown-card, .gallery-card, .invite-card { padding: 30px; }
+      .events-grid { grid-template-columns: repeat(2, minmax(0,1fr)); align-items: stretch; }
+      .event-card { padding: 28px 22px 24px; }
+      .gallery-card { padding-inline: 28px; }
+      .gallery-stage { height: 380px; }
+      .gallery-slide { width: min(55%, 360px); }
+      .section { margin-block: 24px; }
+    }
+
+
+    /* ============================================================
+       APERTURA DE LA CARTA: sobre -> hoja interior -> tarjeta principal.
+       Cronología aproximada (ms desde que se toca "Abrir"):
+         0      el sello se retira y el sobre baja un poco
+         120    la solapa gira (rotateX 0 → 180°): primero se eleva, luego cae
+         500    la hoja interior sube desde el bolsillo
+         1150   aparece la tarjeta principal   (JS: OPEN_TIMELINE.sheet)
+         1250   se desvanecen el sobre y el fondo (JS: OPEN_TIMELINE.fade)
+         2050   se retira el sobre del DOM      (JS: OPEN_TIMELINE.remove)
+       Los tiempos de este CSS y de OPEN_TIMELINE (JS) deben coincidir.
+       ============================================================ */
+    body.card-locked { height: 100%; overflow: hidden; }
+    .invitation-gate {
+      position: fixed; inset: 0; z-index: 100; display: grid; place-items: center;
+      /* El sobre queda centrado en el espacio visible y respeta las zonas seguras en los cuatro lados. */
+      padding:
+        max(18px, calc(env(safe-area-inset-top, 0px) + 10px))
+        max(18px, calc(env(safe-area-inset-right, 0px) + 10px))
+        max(18px, calc(env(safe-area-inset-bottom, 0px) + 10px))
+        max(18px, calc(env(safe-area-inset-left, 0px) + 10px));
+      background: radial-gradient(ellipse at 50% 12%, rgba(255,255,255,.96), transparent 48%),
+                  linear-gradient(155deg, #f7f9fd 0%, #e8eef8 56%, #f4f6fb 100%);
+      opacity: 1; visibility: visible;
+      transition: opacity .7s cubic-bezier(.4,0,.2,1), visibility 0s linear 0s;
+      overflow: hidden; isolation: isolate; overscroll-behavior: none;
+    }
+    .invitation-gate::before, .invitation-gate::after {
+      content: ""; position: absolute; width: 190px; height: 190px; border-radius: 50%;
+      pointer-events: none; opacity: .16; filter: blur(52px); transform: translateZ(0);
+    }
+    .invitation-gate::before { left: -85px; top: 18%; background: #a9bfdf; opacity: .25; }
+    .invitation-gate::after { right: -85px; bottom: 12%; background: #c5d4eb; opacity: .35; }
+    /* Tras tocar "Abrir" la portada ya no recibe toques: nada se cuela hacia la tarjeta ni se dispara dos veces. */
+    .invitation-gate.opening { pointer-events: none; }
+
+    .gate-envelope {
+      --env-radius: 19px;
+      position: relative; z-index: 1; width: min(84vw, 390px); aspect-ratio: 5.5 / 8.5;
+      margin: 0 auto; flex: none; perspective: 1500px; isolation: isolate;
+      /* Permite dimensionar la tipografía de la hoja según el ancho real del sobre (cqw). */
+      container-type: inline-size;
+      transition: transform 1.05s cubic-bezier(.22,.8,.2,1), opacity .65s ease;
+    }
+    @supports (width: 1svh) {
+      .gate-envelope { width: min(84vw, 50.5svh, 390px); }
+    }
+
+    /* Interior del sobre: forro azul pálido con trama fina (se ve al abrir la solapa). */
+    .gate-back, .gate-paper, .gate-pocket, .gate-front { position: absolute; inset: 0; border-radius: var(--env-radius); }
+    .gate-back {
+      z-index: 1; border: 1px solid rgba(255,255,255,.95);
+      background:
+        repeating-linear-gradient(135deg, rgba(255,255,255,.2) 0 1px, transparent 1px 7px),
+        linear-gradient(165deg, #dfe7f4 0%, #c1cfe6 100%);
+      box-shadow: 0 30px 46px -12px rgba(35,52,82,.32), 0 8px 18px rgba(35,52,82,.12), inset 0 0 0 1px rgba(181,196,219,.55);
+    }
+
+    /* Hoja interior: guardada dentro del sobre; sube cuando la solapa ya está abierta. */
+    .gate-paper {
+      inset: 5.5% 6.5% 7.5%; z-index: 3; border-radius: 10px; overflow: hidden;
+      background: linear-gradient(160deg, #2c4c7e 0%, #182c52 56%, #101a36 100%); color: #f8f7f4;
+      box-shadow: 0 10px 26px rgba(12,17,34,.32);
+      transition: transform 1.05s cubic-bezier(.16,.84,.24,1) .5s;
+    }
+    .gate-paper::before {
+      content: ""; position: absolute; inset: 7px; border: 1px solid rgba(231,196,111,.38);
+      border-radius: 6px; pointer-events: none;
+    }
+    .gate-paper-inner {
+      position: relative; height: 100%; display: flex; flex-direction: column; align-items: center;
+      justify-content: flex-start; padding: 12% 7% 0; text-align: center;
+    }
+    .gate-cap { color: #f2d48e; font-size: 1.9rem; line-height: 1; margin-bottom: 14px; }
+    .gate-school { margin: 0 0 12px; color: #dce6f6; font-size: .66rem; font-weight: 900; letter-spacing: .22em; }
+    .gate-invite { margin: 0 0 10px; color: #f2d48e; font-size: .64rem; font-weight: 800; letter-spacing: .24em; text-transform: uppercase; }
+    .gate-paper h2 { color: #ffffff; font-family: Georgia, serif; font-size: 2.1rem; }
+    .gate-grade { margin: 8px 0 0; color: #e6edf9; font-size: .84rem; font-weight: 850; letter-spacing: .2em; }
+    .gate-year { margin-top: 10px; color: #f2d48e; font-size: .74rem; font-weight: 900; letter-spacing: .18em; }
+    .gate-rule { width: 22%; height: 1px; margin: 18px 0 13px; background: #e4c477; }
+    .gate-paper-note { margin: 0; color: #d5deef; font-family: Georgia, serif; font-size: .95rem; line-height: 1.55; font-style: italic; }
+    @supports (font-size: 1cqw) {
+      .gate-cap { font-size: 8.6cqw; margin-bottom: 4.2cqw; }
+      .gate-invite { font-size: 3.1cqw; margin-bottom: 2.8cqw; }
+      .gate-school { font-size: 3.2cqw; margin-bottom: 3.6cqw; }
+      .gate-paper h2 { font-size: 11cqw; }
+      .gate-grade { font-size: 4.1cqw; margin-top: 2.4cqw; }
+      .gate-year { font-size: 3.6cqw; margin-top: 3cqw; }
+      .gate-rule { margin: 5.4cqw 0 4cqw; }
+      .gate-paper-note { font-size: 4.5cqw; }
+    }
+
+    /* Frente del sobre: dos paños laterales + paño inferior que dejan una abertura triangular arriba. */
+    .gate-pocket {
+      z-index: 4; background: linear-gradient(160deg, #fbfcff 0%, #e5ecf7 100%);
+      clip-path: polygon(0 0, 50% 52%, 100% 0, 100% 100%, 0 100%);
+    }
+    .gate-folds { position: absolute; inset: 0; z-index: 4; width: 100%; height: 100%; pointer-events: none; overflow: visible; clip-path: inset(0 round var(--env-radius)); }
+    .gate-folds .fold-line { fill: none; stroke: rgba(130,152,190,.5); stroke-width: 1; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+    .gate-folds .flap-shadow { transition: opacity .25s ease; }
+    .invitation-gate.opening .gate-folds .flap-shadow { opacity: 0; }
+
+    /* Solapa: dos caras (exterior perlada / forro interior) que se intercambian al pasar los 90°. */
+    .gate-flap {
+      position: absolute; left: 0; top: 0; width: 100%; height: 57%; z-index: 6; transform-origin: 50% 0;
+      clip-path: inset(0 round var(--env-radius) var(--env-radius) 0 0); pointer-events: none;
+    }
+    .gate-flap polygon { vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+    .gate-flap .flap-out { stroke: rgba(140,160,196,.6); stroke-width: 1; }
+    .gate-flap .flap-in { stroke: rgba(150,170,205,.55); stroke-width: 1; opacity: 0; }
+    .invitation-gate.opening .gate-flap { animation: flapOpen .9s linear .12s both, flapFade .9s linear .12s both; }
+    .invitation-gate.opening .flap-out { animation: faceOut .9s step-end .12s both; }
+    .invitation-gate.opening .flap-in { animation: faceIn .9s step-end .12s both; }
+    /* Primera mitad: la solapa se despega (acelera). Segunda: pasa la vertical y cae suavemente. */
+    @keyframes flapOpen {
+      0%    { transform: rotateX(0deg) scaleY(1);     z-index: 6; animation-timing-function: cubic-bezier(.5,0,.9,.6); }
+      49.9% { transform: rotateX(89.8deg) scaleY(1);  z-index: 6; animation-timing-function: linear; }
+      50%   { transform: rotateX(90deg) scaleY(1);    z-index: 2; animation-timing-function: cubic-bezier(.1,.6,.3,1); }
+      100%  { transform: rotateX(180deg) scaleY(.74); z-index: 2; }
+    }
+    @keyframes flapFade { 0%, 68% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes faceOut { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes faceIn  { 0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 1; } }
+
+    /* Brillo y marco dorado muy finos sobre el sobre cerrado; se apagan al abrir. */
+    .gate-front {
+      z-index: 7; pointer-events: none; border: 1px solid rgba(255,255,255,.9);
+      background: linear-gradient(135deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 36%);
+      transition: opacity .3s ease;
+    }
+    .gate-front::after {
+      content: ""; position: absolute; inset: 7px; border: 1px solid rgba(201,157,67,.34);
+      border-radius: calc(var(--env-radius) - 6px);
+    }
+    .invitation-gate.opening .gate-front { opacity: 0; }
+
+    /* Sello "Abrir": sobre la punta de la solapa, azul marino con anillo dorado (alto contraste sobre el sobre claro). */
+    .gate-open {
+      position: absolute; z-index: 9; left: 50%; top: 57%; transform: translate(-50%,-50%);
+      width: 96px; height: 96px; min-width: 96px; padding: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px;
+      border: 2px solid rgba(231,196,111,.92); border-radius: 50%;
+      color: #fbe8b4; background: radial-gradient(circle at 34% 26%, #3d6199 0%, #20386a 58%, #121f3f 100%);
+      box-shadow: 0 0 0 5px rgba(255,255,255,.6), 0 12px 26px rgba(16,28,58,.38), inset 0 1px 0 rgba(255,255,255,.28), inset 0 -6px 12px rgba(5,10,28,.35);
+      cursor: pointer; font-weight: 900; font-size: .84rem; letter-spacing: .1em; text-transform: uppercase;
+      touch-action: manipulation; -webkit-user-select: none; user-select: none;
+      transition: transform .18s ease, opacity .28s ease, filter .18s ease, box-shadow .18s ease;
+    }
+    /* Anillo pulsante: solo transform/opacity (no repinta sombras en cada cuadro). */
+    .gate-open::after {
+      content: ""; position: absolute; inset: -9px; border-radius: 50%; pointer-events: none;
+      border: 1.5px solid rgba(201,157,67,.6); opacity: 0; animation: sealRing 2.6s ease-out infinite;
+    }
+    @keyframes sealRing { 0% { opacity: .75; transform: scale(.92); } 70%, 100% { opacity: 0; transform: scale(1.3); } }
+    .gate-seal-icon {
+      display: block; width: 15px; height: 15px; background: linear-gradient(135deg, #f6dc98, #d4a84b);
+      clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+    }
+    @supports (width: 1cqw) {
+      .gate-open { width: clamp(68px, 29cqw, 96px); height: clamp(68px, 29cqw, 96px); min-width: 0; font-size: clamp(.66rem, 4.4cqw, .84rem); gap: 5px; }
+      .gate-seal-icon { width: clamp(11px, 4.6cqw, 15px); height: clamp(11px, 4.6cqw, 15px); }
+    }
+    @media (hover: hover) { .gate-open:hover { filter: brightness(1.1); } }
+    .gate-open:active {
+      transform: translate(-50%,-50%) scale(.93); filter: brightness(.94);
+      box-shadow: 0 0 0 4px rgba(255,255,255,.55), 0 5px 12px rgba(16,28,58,.35), inset 0 3px 8px rgba(5,10,28,.45);
+    }
+    .gate-open:focus-visible { outline: 3px solid #14284a; outline-offset: 7px; }
+    .gate-open:disabled { cursor: default; pointer-events: none; }
+    .invitation-gate.opening .gate-open { opacity: 0; transform: translate(-50%,-50%) scale(.72); transition: opacity .22s ease, transform .3s ease; }
+    .invitation-gate.opening .gate-open::after { animation: none; }
+
+    .gate-tap-hint {
+      position: absolute; z-index: 5; left: 0; right: 0; bottom: 6.5%; width: 88%; margin: 0 auto;
+      color: #34496b; text-align: center; font-size: .66rem; font-weight: 850; letter-spacing: .16em; line-height: 1.5;
+      text-wrap: balance; pointer-events: none; transition: opacity .25s ease;
+    }
+    @supports (font-size: 1cqw) { .gate-tap-hint { font-size: clamp(.5rem, 3.1cqw, .72rem); } }
+    .invitation-gate.opening .gate-tap-hint, .invitation-gate.opening .gate-label { opacity: 0; }
+    /* Etiqueta dorada sobre el paño inferior del sobre. */
+    .gate-label {
+      position: absolute; z-index: 5; left: 0; right: 0; top: 80.5%; margin: 0; text-align: center;
+      color: #8a6b2c; font-family: Georgia, "Times New Roman", serif; font-size: .62rem; font-style: italic;
+      letter-spacing: .26em; pointer-events: none; transition: opacity .25s ease;
+    }
+    @supports (font-size: 1cqw) { .gate-label { font-size: clamp(.5rem, 3.3cqw, .72rem); } }
+    /* Entrada suave del sobre al cargar (solo al inicio; no interfiere con la apertura). */
+    .gate-envelope { animation: envelopeIn .9s cubic-bezier(.2,.8,.2,1) backwards; }
+    @keyframes envelopeIn { from { opacity: 0; transform: translate3d(0,22px,0) scale(.96); } }
+
+    /* Coreografía de apertura. */
+    .invitation-gate.opening .gate-envelope { transform: translate3d(0, 5%, 0); }
+    .invitation-gate.opening .gate-paper { transform: translate3d(0, -41%, 0); will-change: transform; }
+    .invitation-gate.gate-fade { opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .7s cubic-bezier(.4,0,.2,1), visibility 0s linear .7s; }
+    .invitation-gate.gate-fade .gate-envelope { opacity: 0; transform: translate3d(0, 3%, 0) scale(.97); transition: transform .7s ease, opacity .6s ease; }
+
+    /* La tarjeta principal emerge mientras el sobre se disuelve. */
+    .main-sheet {
+      position: relative; z-index: 1; width: min(calc(100% - 28px - 2 * max(env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px))), 980px);
+      margin: 0 auto 24px; padding: 0 14px;
+      border: 1px solid rgba(220,232,250,.18); border-radius: 30px;
+      background: linear-gradient(165deg, #1c345f 0%, #17294e 54%, #101a36 100%);
+      box-shadow: 0 28px 90px rgba(0,0,0,.25);
+      opacity: 0; transform: translate3d(0,48px,0) scale(.975); pointer-events: none;
+      transition: opacity .85s ease, transform 1s cubic-bezier(.18,.8,.2,1);
+      overflow: hidden;
+    }
+    .main-sheet:focus { outline: none; }
+    .main-sheet::before {
+      content: ""; position: absolute; z-index: 0; top: 0; bottom: 0; left: -55%; width: 34%;
+      pointer-events: none; opacity: 0; transform: skewX(-18deg) translateX(0);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.105), transparent);
+    }
+    .main-sheet.is-visible { opacity: 1; transform: translate3d(0,0,0) scale(1); pointer-events: auto; }
+    .main-sheet.is-visible::before { opacity: 1; animation: sheetShimmer 1.35s ease .55s 1 both; }
+    .main-sheet > * { position: relative; z-index: 1; }
+    .main-sheet > .sheet-sparkle-field { position: absolute; z-index: 0; }
+
+    .hero::after {
+      content: ""; position: absolute; z-index: 2; top: 0; left: -45%; width: 38%; height: 1px;
+      opacity: 0; pointer-events: none;
+      background: linear-gradient(90deg, transparent, rgba(247,215,139,.95), transparent);
+    }
+    .main-sheet.is-visible .hero::after { animation: headerShimmer 1.2s ease .72s 1 both; }
+    @keyframes headerShimmer { 0% { transform: translateX(0); opacity: 0; } 25% { opacity: .9; } 100% { transform: translateX(470%); opacity: 0; } }
+
+    @keyframes sheetShimmer { 0% { transform: skewX(-18deg) translateX(0); opacity: 0; } 22% { opacity: .8; } 100% { transform: skewX(-18deg) translateX(500%); opacity: 0; } }
+    .audio-button { width: 48px; min-width: 48px; height: 48px; padding: 0; border-radius: 50%; }
+    .audio-icon { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; transition: transform .28s ease, opacity .2s ease; }
+    .audio-icon.sound-off { display: none; }
+    .audio-button[aria-pressed="true"] .sound-on { display: none; }
+    .audio-button[aria-pressed="true"] .sound-off { display: block; }
+    .audio-button:active .audio-icon { transform: scale(.84) rotate(-8deg); }
+
+    /* CAMBIO 5: cuatro fichas exactas de grado, sin textos ni ejemplos de fotos. */
+    .photo-window { background: linear-gradient(145deg, #ffffff, #ffffff); }
+    .photo-empty { position: absolute; z-index: 0; inset: 0; background: radial-gradient(circle at 50% 40%, rgba(255,255,255,.42), transparent 57%), linear-gradient(145deg,#e7e1d6,#c5c7d2); }
+    .photo-caption { color: #202a47; font-size: .72rem; font-weight: 950; letter-spacing: .045em; transition: color .3s ease, letter-spacing .3s ease; }
+    .gallery-slide.is-active { border-color: rgba(247,215,139,.95); box-shadow: 0 22px 54px rgba(0,0,0,.43), 0 0 0 2px rgba(247,215,139,.12); }
+    .gallery-slide.is-active .photo-caption { color: #9d7028; letter-spacing: .065em; }
+    /* Zona táctil de 44 px con un indicador visual pequeño en el centro. */
+    .gallery-dots { align-items: center; gap: 2px; }
+    .gallery-dot {
+      display: grid; place-items: center; width: 44px; min-width: 44px; height: 44px; min-height: 44px;
+      padding: 0; border: 0; border-radius: 50%; background: transparent; cursor: pointer;
+    }
+    .gallery-dot::before {
+      content: ""; display: block; width: 8px; height: 8px; border-radius: 99px;
+      background: rgba(255,255,255,.3); transition: width .3s ease, background .3s ease, transform .3s ease;
+    }
+    .gallery-dot.active::before { width: 25px; background: var(--gold); transform: scale(1.04); }
+    .gallery-stage { touch-action: pan-y; }
+    .nav-button, .spin-button, .tool-button { touch-action: manipulation; }
+    .spin-button { transition: transform .2s ease, box-shadow .25s ease, filter .25s ease; }
+    .spin-button:active, .nav-button:active { transform: scale(.92); }
+    .gallery-heading, .gallery-controls, .gallery-dots, .gallery-status { transition: opacity .55s ease, transform .55s ease; }
+    .gallery-card:not(.visible) .gallery-heading, .gallery-card:not(.visible) .gallery-controls, .gallery-card:not(.visible) .gallery-dots, .gallery-card:not(.visible) .gallery-status { opacity: 0; transform: translate3d(0,12px,0); }
+    .gallery-card.visible .gallery-heading { transition-delay: 80ms; }
+    .gallery-card.visible .gallery-controls { transition-delay: 190ms; }
+    .gallery-card.visible .gallery-dots { transition-delay: 260ms; }
+    .gallery-card.visible .gallery-status { transition-delay: 320ms; }
+
+    /* NUEVO: ampliación de fotografías al mantener presionada una imagen. */
+    .photo-window img { -webkit-touch-callout: none; user-select: none; -webkit-user-drag: none; }
+    .photo-lightbox {
+      position: fixed; inset: 0; z-index: 120; display: grid; place-items: center;
+      padding: max(16px, calc(var(--safe-top) + 12px)) 14px max(16px, calc(var(--safe-bottom) + 12px));
+      background: rgba(4,11,25,.94); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+      opacity: 0; visibility: hidden; pointer-events: none;
+      transition: opacity .24s ease, visibility 0s linear .24s;
+    }
+    .photo-lightbox.is-open { opacity: 1; visibility: visible; pointer-events: auto; transition: opacity .24s ease, visibility 0s; }
+    .lightbox-panel { position: relative; width: min(100%, 940px); display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .lightbox-close {
+      position: absolute; z-index: 2; top: 8px; right: 8px; width: 46px; height: 46px; display: grid; place-items: center;
+      border: 1px solid rgba(255,255,255,.35); border-radius: 50%; color: #fff; background: rgba(8,20,42,.72);
+      font-size: 1.35rem; cursor: pointer; transform: scale(1); transition: transform .2s ease, background .2s ease;
+    }
+    .lightbox-close:active { transform: scale(.92); }
+    .lightbox-image-wrap { display: grid; place-items: center; width: 100%; min-height: 180px; max-height: 78vh; max-height: 78svh; }
+    .lightbox-image { display: block; width: auto; height: auto; max-width: 100%; max-height: 76vh; max-height: 76svh; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 70px rgba(0,0,0,.45); }
+    .lightbox-caption { max-width: calc(100% - 110px); margin: 0; color: #f4ead2; font-size: .84rem; font-weight: 800; letter-spacing: .06em; text-align: center; }
+    .lightbox-download {
+      min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 8px 14px;
+      border: 1px solid rgba(231,196,111,.7); border-radius: 999px; color: #182747; background: linear-gradient(120deg,#f3dfaa,#d7b35d);
+      font-size: .78rem; font-weight: 900; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,.24); transition: transform .2s ease;
+    }
+    .lightbox-download:active { transform: scale(.95); }
+    .lightbox-download svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    body.photo-viewing { overflow: hidden; }
+
+    @media (max-width: 390px) {
+      .lightbox-close { right: 2px; }
+    }
+
+    @media (min-width: 650px) {
+      .main-sheet { padding-inline: 28px; margin-top: 16px; margin-bottom: 36px; }
+      .invitation-gate { padding-block: 28px; }
+      .gate-envelope { width: min(43vw, 420px); }
+      @supports (width: 1svh) { .gate-envelope { width: min(43vw, 50.5svh, 420px); } }
+    }
+    /* Pantallas bajas (móvil en horizontal): sobre algo menor para que la solapa y la hoja tengan espacio arriba. */
+    @media (max-height: 520px) and (orientation: landscape) {
+      .gate-envelope { width: min(43vw, 420px); }
+      @supports (width: 1svh) { .gate-envelope { width: min(43vw, 42svh, 420px); } }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important; transition-delay: 0s !important; scroll-behavior: auto !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+      .gate-open::after { display: none; }
+    }
+
+  </style>
+</head>
+<body class="card-locked">
+  <!-- CAMBIO 7: PORTADA MEDIA CARTA CERRADA. El botón Abrir inicia la secuencia de apertura. -->
+  <section class="invitation-gate" id="invitationGate" aria-label="Invitación cerrada de graduación">
+    <!-- CAMBIO 4: estrellas visibles alrededor del sobre, sin cubrir los controles. -->
+    <div class="sparkle-field gate-sparkle-field" id="gateSparkleField" aria-hidden="true"></div>
+    <div class="gate-envelope" id="gateEnvelope">
+      <div class="gate-back" aria-hidden="true"></div>
+      <div class="gate-paper" id="gatePaper" aria-hidden="true">
+        <div class="gate-paper-inner">
+          <span class="gate-cap" aria-hidden="true">✦</span>
+          <p class="gate-invite">Estás invitado/a</p>
+          <p class="gate-school">ESCUELA REPOLLITO</p>
+          <h2>Graduación</h2>
+          <p class="gate-grade">6.º GRADO</p>
+          <span class="gate-year">PROMOCIÓN 2026</span>
+          <div class="gate-rule"></div>
+          <p class="gate-paper-note">Una etapa termina.<br>Una nueva historia comienza.</p>
+        </div>
+      </div>
+      <div class="gate-pocket" aria-hidden="true"></div>
+      <svg class="gate-folds" viewBox="0 0 100 154.55" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs><filter id="gateSoftShadow" x="-10%" y="-10%" width="120%" height="130%"><feGaussianBlur stdDeviation="1.4"/></filter></defs>
+        <polygon points="0,0 50,80.4 50,96 0,154.55" fill="rgba(255,255,255,.55)"/>
+        <polygon points="100,0 50,80.4 50,96 100,154.55" fill="rgba(150,170,205,.14)"/>
+        <polygon points="0,154.55 50,96 100,154.55" fill="rgba(150,170,205,.2)"/>
+        <path class="fold-line" d="M0 154.55 L50 96 L100 154.55"/>
+        <polygon class="flap-shadow" points="0,3 100,3 50,91.5" fill="rgba(40,60,100,.2)" filter="url(#gateSoftShadow)"/>
+      </svg>
+      <svg class="gate-flap" viewBox="0 0 100 88.1" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="flapOuterGrad" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#f1f5fc"/><stop offset="1" stop-color="#dbe4f2"/></linearGradient>
+          <linearGradient id="flapInnerGrad" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#cdd9ec"/><stop offset="1" stop-color="#b3c4df"/></linearGradient>
+        </defs>
+        <polygon class="flap-out" points="0,0 100,0 50,88.1" fill="url(#flapOuterGrad)"/>
+        <polygon class="flap-in" points="0,0 100,0 50,88.1" fill="url(#flapInnerGrad)"/>
+      </svg>
+      <div class="gate-front" aria-hidden="true"></div>
+      <button class="gate-open" id="openCardButton" type="button" aria-label="Abrir invitación">
+        <span class="gate-seal-icon" aria-hidden="true"></span>
+        <span>Abrir</span>
+      </button>
+      <p class="gate-label" aria-hidden="true">INVITACIÓN</p>
+      <p class="gate-tap-hint">TOCÁ PARA ABRIR TU INVITACIÓN</p>
+    </div>
+  </section>
+
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <main class="page-shell main-sheet" id="mainSheet" aria-hidden="true" tabindex="-1">
+    <!-- CAMBIO 4: destellos distribuidos por la hoja azul y siempre detrás del texto. -->
+    <div class="sparkle-field sheet-sparkle-field" id="sheetSparkleField" aria-hidden="true"></div>
+    <nav class="topbar" aria-label="Controles de la tarjeta">
+      <!-- CAMBIO 2: control de audio solo con icono SVG; aria-label conserva accesibilidad. -->
+      <button class="tool-button audio-button" id="audioToggle" type="button" aria-pressed="false" aria-label="Silenciar sonidos" title="Silenciar sonidos">
+        <svg class="audio-icon sound-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d="M16 9a5 5 0 0 1 0 6M18.5 6.5a8.5 8.5 0 0 1 0 11"/></svg>
+        <svg class="audio-icon sound-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d="m17 9 5 6m0-6-5 6"/></svg>
+      </button>
+    </nav>
+
+    <header class="hero">
+      <span class="sparkle s1" aria-hidden="true">✦</span><span class="sparkle s2" aria-hidden="true">✧</span><span class="sparkle s3" aria-hidden="true">✦</span>
+      <!-- 1) LOGO DE LA ESCUELA: cambia la ruta de src por el archivo de tu logo. -->
+      <div class="logo-frame" aria-label="Logo de la Escuela Repollito">
+        <img id="schoolLogo" src="logo.png" alt="Logo de la Escuela Repollito" />
+        <div class="logo-placeholder" id="logoPlaceholder"><span class="cap" aria-hidden="true">🎓</span><small>Logo escolar</small></div>
+      </div>
+      <p class="eyebrow">Escuela Repollito</p>
+      <h1>¡Lo logramos!<span class="gold">Promoción</span></h1>
+      <p class="grade-line">Graduación · 6.º Grado</p>
+      <div class="year-stamp">2026</div>
+      <p class="hero-invite">Con el corazón lleno de alegría, te invitamos a celebrar con nosotros el final de esta etapa tan especial.</p>
+      <p class="official-name"><strong>“Centenario del Natalicio de Luis Alberto del Paraná. Homenaje al Pedagogo Nacional Ramón Indalecio Cardozo, en conmemoración del sesquicentenario de su nacimiento”</strong></p>
+    </header>
+
+    <section class="section glass-card invite-card reveal" aria-labelledby="inviteTitle">
+      <p class="section-kicker">Estás invitado/a</p>
+      <h2 id="inviteTitle">Celebremos juntos este gran día</h2>
+      <p class="invite-text">Los egresados de 6.º Grado queremos compartir contigo la alegría de cerrar una etapa llena de aprendizajes, amistad y sueños. Tu presencia hará este momento aún más inolvidable.</p>
+      <p class="invite-sign">Promoción 2026 · Escuela Repollito</p>
+    </section>
+
+    <section class="section glass-card motto-card reveal" aria-labelledby="mottoTitle">
+      <p class="section-kicker">Nuestra promoción · Nuestro recuerdo</p>
+      <h2 id="mottoTitle">Una etapa, mil sueños</h2>
+      <!-- 4) LEMA: edita el texto de .motto para colocar la frase elegida por el grado. -->
+      <p class="motto">“Hoy termina una hermosa etapa, pero comienza el camino hacia todos nuestros sueños.”</p>
+      <p class="motto-hint">Un recuerdo que llevaremos siempre en el corazón.</p>
+    </section>
+
+    <section class="section reveal" aria-labelledby="countdownTitle">
+      <div class="section-heading">
+        <p class="section-kicker">Falta poco para celebrar</p>
+        <h2 id="countdownTitle">Cuenta regresiva para la graduación</h2>
+        <p>Miércoles 2 de diciembre de 2026 · 18:00 h · Salón Dolly 2</p>
+      </div>
+      <div class="glass-card countdown-card">
+        <div class="count-grid" aria-live="off">
+          <div class="time-cell"><span class="time-number" id="days">--</span><span class="time-label">Días</span></div>
+          <div class="time-cell"><span class="time-number" id="hours">--</span><span class="time-label">Horas</span></div>
+          <div class="time-cell"><span class="time-number" id="minutes">--</span><span class="time-label">Minutos</span></div>
+          <div class="time-cell"><span class="time-number" id="seconds">--</span><span class="time-label">Segundos</span></div>
+        </div>
+        <p class="countdown-note" id="countdownNote">Preparando la cuenta regresiva…</p>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="eventsTitle">
+      <div class="section-heading">
+        <p class="section-kicker">Agendá las fechas</p>
+        <h2 id="eventsTitle">Te invitamos a acompañarnos</h2>
+        <p>Dos momentos para celebrar juntos a la Promoción 2026.</p>
+      </div>
+      <div class="events-grid">
+        <article class="event-card">
+          <span class="event-badge" aria-hidden="true">01</span>
+          <p class="event-kicker">Misa de acción de gracias</p>
+          <h3>Viernes 27 de noviembre</h3>
+          <p class="event-year">2026</p>
+          <ul class="event-facts">
+            <li><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></span><span class="fact-text"><small>Convocatoria</small><strong>18:30 h</strong></span></li>
+            <li><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></span><span class="fact-text"><small>Inicio de la misa</small><strong>19:30 h</strong></span></li>
+            <li><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 10.2c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></svg></span><span class="fact-text"><small>Lugar</small><strong>Cristo Redentor</strong></span></li>
+          </ul>
+        </article>
+        <article class="event-card">
+          <span class="event-badge" aria-hidden="true">02</span>
+          <p class="event-kicker">Acto de graduación</p>
+          <h3>Miércoles 2 de diciembre</h3>
+          <p class="event-year">2026</p>
+          <ul class="event-facts">
+            <li><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></span><span class="fact-text"><small>Horario</small><strong>18:00 h</strong></span></li>
+            <li><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 10.2c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></svg></span><span class="fact-text"><small>Lugar</small><strong>Salón Dolly 2</strong></span></li>
+          </ul>
+        </article>
+      </div>
+      <p class="events-note">¡Nos encantará compartir ambos momentos contigo!</p>
+    </section>
+
+    <section class="section glass-card gallery-card reveal" aria-labelledby="galleryTitle">
+      <div class="gallery-heading">
+        <p class="section-kicker">Nuestros momentos</p>
+        <h2 id="galleryTitle">Recuerdos que brillan</h2>
+      </div>
+      <div class="gallery-stage" id="galleryStage" role="group" aria-label="Galería de recuerdos. Desliza para cambiar de fotografía." tabindex="0">
+        <div class="gallery-track" id="galleryTrack"></div>
+      </div>
+      <div class="gallery-controls">
+        <button class="nav-button" id="prevPhoto" type="button" aria-label="Fotografía anterior">‹</button>
+        <button class="spin-button" id="spinGallery" type="button">✦ Girar recuerdos</button>
+        <button class="nav-button" id="nextPhoto" type="button" aria-label="Fotografía siguiente">›</button>
+      </div>
+      <div class="gallery-dots" id="galleryDots" aria-label="Elegir fotografía"></div>
+      <p class="gallery-status" id="galleryStatus" aria-live="polite">6° GRADO A T. M.</p>
+    </section>
+
+
+    <footer class="footer">
+      <p>Con cariño, <strong>Escuela Repollito</strong></p>
+      <p>6.º Grado · <strong>Promoción 2026</strong></p>
+      <p>¡Te esperamos para celebrar juntos! Un capítulo termina y una historia maravillosa continúa. <span class="heart">♥</span></p>
+    </footer>
+  </main>
+  <!-- NUEVO: modal de ampliación. Se abre al mantener presionada una foto cargada. -->
+  <section class="photo-lightbox" id="photoLightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Fotografía ampliada">
+    <div class="lightbox-panel">
+      <button class="lightbox-close" id="closePhotoLightbox" type="button" aria-label="Cerrar fotografía ampliada">×</button>
+      <div class="lightbox-image-wrap"><img class="lightbox-image" id="lightboxImage" alt="" /></div>
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+      <a class="lightbox-download" id="downloadPhoto" href="#" download>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3h16v-3"/></svg>
+        Descargar foto
+      </a>
+    </div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    "use strict";
+
+    /* =============================================================
+       CONFIGURACIÓN RÁPIDA DEL EVENTO
+       3) FECHA Y HORA DEL CONTADOR: cambia EVENT_DATE por la fecha y hora
+          reales en formato ISO. Paraguay usa normalmente el huso -03:00.
+          Fecha oficial: "2026-12-02T18:00:00-03:00"
+       4) LEMA: edita el texto del lema en el HTML (busca el comentario 4).
+       ============================================================= */
+    // Cuenta regresiva: miércoles 2 de diciembre de 2026, 18:00 h de Paraguay (UTC−3).
+    const EVENT_DATE = "2026-12-02T18:00:00-03:00";
+    // Los dos eventos se muestran en el bloque "Te invitamos a acompañarnos" del HTML (busca id="eventsTitle").
+    /* =============================================================
+       2) FOTOGRAFÍAS DE LA RULETA
+       Coloca una foto para cada sección y cambia únicamente su src.
+       Ejemplo: src: "fotos/6a-turno-manana.jpg".
+       Deja src: "" mientras no tengas una imagen. Las fotos horizontales
+       y verticales se muestran completas mediante object-fit: contain.
+       Las únicas etiquetas de la ruleta son las cuatro secciones solicitadas.
+       ============================================================= */
+    const GALLERY = [
+      { src: "6A-TM.jpeg", title: "6° GRADO A T. M." },
+      { src: "6B-TM.jpeg", title: "6° GRADO B T. M." },
+      { src: "6A-TT.jpeg", title: "6° GRADO A T. T." },
+      { src: "6B-TT.jpeg", title: "6° GRADO B T. T." }
+    ];
+
+    // ESTADO COMPARTIDO: se declara antes de cualquier uso (evita errores de "acceso antes de inicializar").
+    const reduceQuery = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : { matches: false };
+    const prefersReduced = () => reduceQuery.matches;
+    let audioContext = null;
+    let isMuted = false;
+    let toastTimer = null;
+    let cardOpened = false;
+    let sheetRevealed = false;
+    let celebrationDue = false;
+    let celebrationReached = false;
+    let countdownTimer = null;
+    let countdownFinished = false;
+
+    // La tarjeta principal no es operable ni anunciada por lectores de pantalla hasta que se abre el sobre.
+    document.getElementById("mainSheet").inert = true;
+
+    // Mostrar automáticamente el logo cuando el archivo indicado exista.
+    const schoolLogo = document.getElementById("schoolLogo");
+    schoolLogo.addEventListener("load", () => {
+      schoolLogo.style.display = "block";
+      document.getElementById("logoPlaceholder").style.display = "none";
+    });
+    schoolLogo.addEventListener("error", () => {
+      schoolLogo.style.display = "none";
+      document.getElementById("logoPlaceholder").style.display = "flex";
+    });
+
+    // Cuenta regresiva con estado especial cuando llega el momento del acto.
+    const countdownEls = {
+      days: document.getElementById("days"), hours: document.getElementById("hours"),
+      minutes: document.getElementById("minutes"), seconds: document.getElementById("seconds")
+    };
+    const countdownNote = document.getElementById("countdownNote");
+    const targetTime = new Date(EVENT_DATE).getTime();
+    const validTarget = Number.isFinite(targetTime);
+    const pad = value => String(value).padStart(2, "0");
+    function updateCountdown() {
+      if (!validTarget) {
+        Object.values(countdownEls).forEach(el => el.textContent = "--");
+        countdownNote.textContent = "Configurá la fecha y hora del acto en EVENT_DATE.";
+        stopCountdown();
+        return;
+      }
+      const remaining = targetTime - Date.now();
+      if (remaining <= 0) {
+        Object.values(countdownEls).forEach(el => el.textContent = "00");
+        countdownNote.textContent = "¡Llegó el momento de celebrar a la Promoción 2026!";
+        stopCountdown();
+        celebrationDue = true;
+        maybeCelebrate();
+        return;
+      }
+      const totalSeconds = Math.floor(remaining / 1000);
+      countdownEls.days.textContent = String(Math.floor(totalSeconds / 86400));
+      countdownEls.hours.textContent = pad(Math.floor((totalSeconds % 86400) / 3600));
+      countdownEls.minutes.textContent = pad(Math.floor((totalSeconds % 3600) / 60));
+      countdownEls.seconds.textContent = pad(totalSeconds % 60);
+      countdownNote.textContent = "El gran momento se acerca…";
+    }
+    function stopCountdown() {
+      countdownFinished = true;
+      if (countdownTimer !== null) { window.clearInterval(countdownTimer); countdownTimer = null; }
+    }
+    // El confeti se lanza solo cuando la tarjeta ya es visible (no detrás del sobre cerrado).
+    function maybeCelebrate() {
+      if (!celebrationDue || celebrationReached || !sheetRevealed) return;
+      celebrationReached = true;
+      launchConfetti(100);
+    }
+    updateCountdown();
+    if (!countdownFinished) countdownTimer = window.setInterval(updateCountdown, 1000);
+
+    // CAMBIO 5/8: ruleta de cuatro grupos con inercia y desaceleración progresiva.
+    const galleryTrack = document.getElementById("galleryTrack");
+    const galleryStage = document.getElementById("galleryStage");
+    const galleryDots = document.getElementById("galleryDots");
+    const galleryStatus = document.getElementById("galleryStatus");
+    let activePhoto = 0;
+    let inertiaTimer = null;
+
+    /* CAMBIO 4: más destellos, visibles en ambas escenas; se crean una sola vez. */
+    const sparkleMarks = ["✦", "✧", "·"];
+    function addSparkles(field, count, seed = 0) {
+      for (let i = 0; i < count; i++) {
+        const n = i + seed;
+        const star = document.createElement("span");
+        star.className = "sparkle-particle";
+        star.textContent = sparkleMarks[n % sparkleMarks.length];
+        star.style.setProperty("--sx", `${(n * 47 + 9) % 97}%`);
+        star.style.setProperty("--sy", `${(n * 61 + 7) % 96}%`);
+        star.style.setProperty("--ss", `${7 + (n % 4) * 2}px`);
+        star.style.setProperty("--sc", n % 3 === 0 ? "#c7a45f" : (n % 3 === 1 ? "#ffffff" : "#c8d9f3"));
+        star.style.setProperty("--sd", `${3.8 + (n % 5) * .7}s`);
+        star.style.setProperty("--sdelay", `${-(n % 7) * .55}s`);
+        field.appendChild(star);
+      }
+    }
+    const isSmallScreen = window.innerWidth < 650;
+    addSparkles(document.getElementById("gateSparkleField"), isSmallScreen ? 12 : 16, 0);
+    addSparkles(document.getElementById("sheetSparkleField"), isSmallScreen ? 18 : 24, 13);
+
+    const cards = GALLERY.map((photo, index) => {
+      const card = document.createElement("article");
+      card.className = "gallery-slide";
+      card.setAttribute("aria-label", photo.title);
+      const frame = document.createElement("div");
+      frame.className = "photo-window";
+      const empty = document.createElement("div");
+      empty.className = "photo-empty";
+      empty.setAttribute("aria-hidden", "true");
+      frame.appendChild(empty);
+
+      // src vacío = espacio limpio sin texto sugerido. Las fotos nunca se recortan.
+      if (photo.src && photo.src.trim()) {
+        const img = document.createElement("img");
+        img.src = photo.src;
+        img.alt = photo.title;
+        img.loading = index < 2 ? "eager" : "lazy";
+        img.decoding = "async";
+        img.draggable = false;
+        img.addEventListener("load", () => { empty.style.display = "none"; });
+        img.addEventListener("error", () => { img.remove(); empty.style.display = "block"; });
+        frame.appendChild(img);
+      }
+      const caption = document.createElement("div");
+      caption.className = "photo-caption";
+      caption.textContent = photo.title;
+      card.append(frame, caption);
+      galleryTrack.appendChild(card);
+
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "gallery-dot";
+      dot.setAttribute("aria-label", `Ver ${photo.title}`);
+      dot.addEventListener("click", () => {
+        stopGalleryMotion();
+        activePhoto = index;
+        renderGallery();
+        playTone(560, .045);
+      });
+      galleryDots.appendChild(dot);
+      return { card, dot };
+    });
+
+    function stopGalleryMotion() {
+      if (inertiaTimer) { window.clearTimeout(inertiaTimer); inertiaTimer = null; }
+    }
+
+    function renderGallery() {
+      const total = cards.length;
+      cards.forEach(({ card, dot }, index) => {
+        let offset = index - activePhoto;
+        if (offset > total / 2) offset -= total;
+        if (offset < -total / 2) offset += total;
+        const abs = Math.abs(offset);
+        const x = offset * (window.innerWidth < 650 ? 54 : 62);
+        const rotate = offset * -25;
+        const scale = abs === 0 ? 1 : Math.max(.77, 1 - abs * .105);
+        const z = abs === 0 ? 0 : -abs * 90;
+        card.style.transform = `translate(-50%, -50%) translateX(${x}%) translateZ(${z}px) rotateY(${rotate}deg) scale(${scale})`;
+        card.style.opacity = abs > 2 ? "0" : String(1 - abs * .22);
+        card.style.zIndex = String(10 - abs);
+        card.style.pointerEvents = abs === 0 ? "auto" : "none";
+        card.setAttribute("aria-hidden", index === activePhoto ? "false" : "true");
+        card.classList.toggle("is-active", index === activePhoto);
+        dot.classList.toggle("active", index === activePhoto);
+        dot.setAttribute("aria-current", index === activePhoto ? "true" : "false");
+      });
+      galleryStatus.textContent = GALLERY[activePhoto].title;
+    }
+
+    function movePhoto(direction, withSound = true) {
+      activePhoto = (activePhoto + direction + cards.length) % cards.length;
+      renderGallery();
+      if (withSound) playTone(direction > 0 ? 640 : 500, .055);
+    }
+
+    // Secuencia de giro con pausas cada vez más largas: sensación de inercia natural.
+    function runInertia(direction, intensity = 4) {
+      stopGalleryMotion();
+      const steps = prefersReduced() ? 1 : Math.max(2, Math.min(8, intensity));
+      let step = 0;
+      const tick = () => {
+        movePhoto(direction, !prefersReduced());
+        step++;
+        if (step >= steps) {
+          inertiaTimer = null;
+          playTone(790, .085);
+          return;
+        }
+        const delay = prefersReduced() ? 1 : 58 + step * step * 24;
+        inertiaTimer = window.setTimeout(tick, delay);
+      };
+      tick();
+    }
+
+    document.getElementById("prevPhoto").addEventListener("click", () => { stopGalleryMotion(); movePhoto(-1); });
+    document.getElementById("nextPhoto").addEventListener("click", () => { stopGalleryMotion(); movePhoto(1); });
+    document.getElementById("spinGallery").addEventListener("click", () => {
+      stopGalleryMotion();
+      runInertia(1, 8);
+    });
+    galleryStage.addEventListener("keydown", event => {
+      if (event.key === "ArrowRight") { event.preventDefault(); stopGalleryMotion(); movePhoto(1); }
+      if (event.key === "ArrowLeft") { event.preventDefault(); stopGalleryMotion(); movePhoto(-1); }
+    });
+
+    // NUEVO: long-press sobre una imagen cargada; el movimiento cancela el temporizador para no bloquear el swipe.
+    const photoLightbox = document.getElementById("photoLightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    const downloadPhoto = document.getElementById("downloadPhoto");
+    const closePhotoLightboxButton = document.getElementById("closePhotoLightbox");
+    let pointerStart = null;
+    let longPressTimer = null;
+    let longPressTriggered = false;
+    let lastPhotoFocus = null;
+    let lightboxOpenedAt = 0;
+
+    function clearLongPressTimer() {
+      if (longPressTimer !== null) {
+        window.clearTimeout(longPressTimer);
+        longPressTimer = null;
+      }
+    }
+
+    function openPhotoLightbox(image, title) {
+      if (!image) return;
+      const source = image.currentSrc || image.src;
+      if (!source) return;
+      lastPhotoFocus = document.activeElement;
+      lightboxImage.src = source;
+      lightboxImage.alt = title;
+      lightboxCaption.textContent = title;
+      // La descarga directa funciona de forma más fiable con fotos del mismo sitio/carpeta.
+      const cleanPath = source.split("?")[0].split("#")[0];
+      const fileName = cleanPath.substring(cleanPath.lastIndexOf("/") + 1) || "foto-graduacion.jpg";
+      downloadPhoto.href = source;
+      downloadPhoto.download = fileName;
+      lightboxOpenedAt = performance.now();
+      photoLightbox.classList.add("is-open");
+      photoLightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("photo-viewing");
+      closePhotoLightboxButton.focus({ preventScroll: true });
+      playTone(760, .075);
+    }
+
+    function closePhotoLightbox() {
+      photoLightbox.classList.remove("is-open");
+      photoLightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("photo-viewing");
+      lightboxImage.removeAttribute("src");
+      if (lastPhotoFocus && typeof lastPhotoFocus.focus === "function") {
+        lastPhotoFocus.focus({ preventScroll: true });
+      } else {
+        galleryStage.focus({ preventScroll: true });
+      }
+    }
+
+    closePhotoLightboxButton.addEventListener("click", closePhotoLightbox);
+    photoLightbox.addEventListener("click", event => {
+      // Soltar el dedo tras la pulsación larga no debe cerrar el visor recién abierto.
+      if (event.target === photoLightbox && performance.now() - lightboxOpenedAt > 350) closePhotoLightbox();
+    });
+    photoLightbox.addEventListener("keydown", event => {
+      if (event.key !== "Tab") return;
+      const focusables = [closePhotoLightboxButton, downloadPhoto];
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && photoLightbox.classList.contains("is-open")) closePhotoLightbox();
+    });
+    galleryStage.addEventListener("contextmenu", event => {
+      if (event.target.closest(".gallery-slide.is-active .photo-window img")) event.preventDefault();
+    });
+
+    galleryStage.addEventListener("pointerdown", event => {
+      if (!event.isPrimary || (event.pointerType === "mouse" && event.button !== 0)) return;
+      stopGalleryMotion();
+      clearLongPressTimer();
+      longPressTriggered = false;
+      const image = event.target.closest(".gallery-slide.is-active .photo-window img");
+      pointerStart = {
+        x: event.clientX, y: event.clientY, time: performance.now(), id: event.pointerId,
+        image: image && image.complete && image.naturalWidth > 0 ? image : null
+      };
+      if (pointerStart.image) {
+        const pressedImage = pointerStart.image;
+        longPressTimer = window.setTimeout(() => {
+          if (!pointerStart || pointerStart.image !== pressedImage) return;
+          longPressTriggered = true;
+          openPhotoLightbox(pressedImage, GALLERY[activePhoto].title);
+        }, 560);
+      }
+      try { galleryStage.setPointerCapture(event.pointerId); } catch (_) {}
+    });
+
+    galleryStage.addEventListener("pointermove", event => {
+      if (!pointerStart || pointerStart.id !== event.pointerId) return;
+      const movedX = Math.abs(event.clientX - pointerStart.x);
+      const movedY = Math.abs(event.clientY - pointerStart.y);
+      // Un desplazamiento normal cancela la ampliación y deja funcionar el gesto de ruleta.
+      if (movedX > 11 || movedY > 11) clearLongPressTimer();
+    });
+
+    galleryStage.addEventListener("pointerup", event => {
+      if (!pointerStart || pointerStart.id !== event.pointerId) return;
+      clearLongPressTimer();
+      const wasLongPress = longPressTriggered;
+      longPressTriggered = false;
+      const deltaX = event.clientX - pointerStart.x;
+      const deltaY = event.clientY - pointerStart.y;
+      const elapsed = Math.max(1, performance.now() - pointerStart.time);
+      pointerStart = null;
+      if (wasLongPress) return;
+      // Solo interpreta el gesto como giro cuando el desplazamiento horizontal domina.
+      if (Math.abs(deltaX) > 28 && Math.abs(deltaX) > Math.abs(deltaY) * 1.15) {
+        const direction = deltaX < 0 ? 1 : -1;
+        const speed = Math.abs(deltaX) / elapsed;
+        const intensity = Math.min(8, Math.max(2, Math.round(Math.abs(deltaX) / 35 + speed * 2)));
+        runInertia(direction, intensity);
+      }
+    });
+    galleryStage.addEventListener("pointercancel", () => {
+      clearLongPressTimer();
+      pointerStart = null;
+      longPressTriggered = false;
+    });
+    let resizeFrame = 0;
+    window.addEventListener("resize", () => {
+      if (resizeFrame) return;
+      resizeFrame = window.requestAnimationFrame(() => { resizeFrame = 0; renderGallery(); });
+    }, { passive: true });
+    renderGallery();
+
+    // Secuencia de apertura. Las animaciones de la solapa y de la hoja viven en CSS (clase .opening);
+    // aquí solo se sincronizan el relevo hacia la tarjeta principal y la limpieza final.
+    // Estos tiempos (ms) deben coincidir con la cronología descrita en el CSS de la portada.
+    const OPEN_TIMELINE = { sheet: 1150, fade: 1250, remove: 2050 };
+    const OPEN_TIMELINE_REDUCED = { sheet: 60, fade: 60, remove: 420 };
+    const invitationGate = document.getElementById("invitationGate");
+    const openCardButton = document.getElementById("openCardButton");
+    const mainSheet = document.getElementById("mainSheet");
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    const openTimers = [];
+    let gateRemoved = false;
+
+    function clearOpenTimers() { while (openTimers.length) window.clearTimeout(openTimers.pop()); }
+    function revealMainSheet() {
+      if (sheetRevealed) return;
+      sheetRevealed = true;
+      document.body.classList.remove("card-locked");
+      document.body.classList.add("card-open");
+      window.scrollTo(0, 0);
+      mainSheet.inert = false;
+      mainSheet.setAttribute("aria-hidden", "false");
+      mainSheet.classList.add("is-visible");
+      if (themeColorMeta) themeColorMeta.setAttribute("content", "#0b1932");
+      initializeRevealObserver();
+      try { mainSheet.focus({ preventScroll: true }); } catch (_) {}
+      maybeCelebrate();
+    }
+    function removeGate() {
+      if (gateRemoved) return;
+      gateRemoved = true;
+      invitationGate.remove();
+    }
+    openCardButton.addEventListener("click", () => {
+      if (cardOpened) return;
+      cardOpened = true;
+      openCardButton.disabled = true;
+      invitationGate.classList.add("opening");
+      playTone(620, .09);
+      const timeline = prefersReduced() ? OPEN_TIMELINE_REDUCED : OPEN_TIMELINE;
+      openTimers.push(window.setTimeout(() => { revealMainSheet(); playTone(820, .12); }, timeline.sheet));
+      openTimers.push(window.setTimeout(() => invitationGate.classList.add("gate-fade"), timeline.fade));
+      openTimers.push(window.setTimeout(() => { clearOpenTimers(); removeGate(); }, timeline.remove));
+    });
+    // Si la pestaña pasa a segundo plano a mitad de la apertura, los temporizadores se frenan: se concluye de inmediato.
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        if (cardOpened) { clearOpenTimers(); revealMainSheet(); invitationGate.classList.add("gate-fade"); removeGate(); }
+      } else if (!countdownFinished) {
+        updateCountdown();
+      }
+    });
+
+    // Audio sintetizado con Web Audio API: no requiere MP3 ni conexión externa.
+    function getAudioContext() {
+      if (isMuted) return null;
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return null;
+      if (!audioContext) audioContext = new AudioContextClass();
+      if (audioContext.state === "suspended") audioContext.resume().catch(() => {});
+      return audioContext;
+    }
+    function playTone(frequency = 620, duration = .07) {
+      const ctx = getAudioContext();
+      if (!ctx || isMuted) return;
+      try {
+        const oscillator = ctx.createOscillator();
+        const gain = ctx.createGain();
+        oscillator.type = "sine";
+        oscillator.frequency.setValueAtTime(frequency, ctx.currentTime);
+        gain.gain.setValueAtTime(.0001, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(.055, ctx.currentTime + .012);
+        gain.gain.exponentialRampToValueAtTime(.0001, ctx.currentTime + duration);
+        oscillator.connect(gain); gain.connect(ctx.destination);
+        oscillator.start(); oscillator.stop(ctx.currentTime + duration + .02);
+      } catch (error) { /* El sonido es opcional; la tarjeta sigue funcionando sin él. */ }
+    }
+    function playFanfare() {
+      [523.25, 659.25, 783.99, 1046.5].forEach((frequency, index) => {
+        window.setTimeout(() => playTone(frequency, .19), index * 115);
+      });
+    }
+    // El primer gesto del usuario desbloquea el audio en navegadores móviles.
+    document.addEventListener("pointerdown", () => { getAudioContext(); }, { once: true, passive: true });
+    const audioToggle = document.getElementById("audioToggle");
+    audioToggle.addEventListener("click", () => {
+      isMuted = !isMuted;
+      audioToggle.setAttribute("aria-pressed", String(isMuted));
+      audioToggle.setAttribute("aria-label", isMuted ? "Activar sonidos" : "Silenciar sonidos");
+      audioToggle.setAttribute("title", isMuted ? "Activar sonidos" : "Silenciar sonidos");
+      if (!isMuted) playTone(740, .09);
+      showToast(isMuted ? "Sonidos silenciados" : "Sonidos activados");
+    });
+
+    // Entrada escalonada de bloques: se activa cuando la hoja ya emergió.
+    function initializeRevealObserver() {
+      const revealItems = [...document.querySelectorAll(".reveal")];
+      revealItems.forEach((item, index) => item.style.setProperty("--reveal-delay", `${Math.min(index * 95, 475)}ms`));
+      if ("IntersectionObserver" in window && !prefersReduced()) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); }
+          });
+        }, { threshold: .1, rootMargin: "0px 0px -5% 0px" });
+        revealItems.forEach(item => observer.observe(item));
+      } else {
+        revealItems.forEach(item => item.classList.add("visible"));
+      }
+    }
+
+    // Confeti creado con elementos CSS: solo transforma y cambia opacidad.
+    function launchConfetti(amount = 120) {
+      const layer = document.getElementById("confettiLayer");
+      if (prefersReduced()) {
+        showToast("¡Felicitaciones, Promoción 2026!");
+        playFanfare();
+        return;
+      }
+      const colors = ["#e7c46f", "#f8f4e9", "#ffffff", "#294878", "#cbd7e8", "#c99d43"];
+      const fragment = document.createDocumentFragment();
+      for (let i = 0; i < amount; i++) {
+        const piece = document.createElement("i");
+        piece.className = "confetti-piece";
+        piece.style.setProperty("--x", `${Math.random() * 100}%`);
+        piece.style.setProperty("--w", `${5 + Math.random() * 7}px`);
+        piece.style.setProperty("--h", `${7 + Math.random() * 10}px`);
+        piece.style.setProperty("--c", colors[Math.floor(Math.random() * colors.length)]);
+        piece.style.setProperty("--duration", `${2.4 + Math.random() * 2.2}s`);
+        piece.style.setProperty("--delay", `${Math.random() * .45}s`);
+        piece.style.setProperty("--drift", `${-100 + Math.random() * 200}px`);
+        piece.style.setProperty("--spin", `${360 + Math.random() * 900}deg`);
+        fragment.appendChild(piece);
+        window.setTimeout(() => piece.remove(), 5200);
+      }
+      layer.appendChild(fragment);
+      playFanfare();
+    }
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      window.clearTimeout(toastTimer);
+      toastTimer = window.setTimeout(() => toast.classList.remove("show"), 2400);
+    }
+
+  </script>
+</body>
+</html>
